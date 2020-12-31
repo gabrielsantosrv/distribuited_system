@@ -38,6 +38,7 @@ def receive_message(client_ip, sock, counter):
         data = json.loads(data.decode())
         message = data.get("message")
         timestamp = data.get("timestamp")
+        print('timestamp', timestamp, 'counter', counter)
         counter = compute_receive_timestamp(timestamp, counter)
 
         lamport_timestamp = '(LAMPORT_TIMESTAMP={})'.format(counter)
