@@ -20,7 +20,7 @@ def handle_client(conn, client_ip):
             counter = send_message(client_ip, conn, counter, msg)
 
             with open('counter.serialize', 'w') as file:
-                file.write(counter)
+                file.write(str(counter))
 
             time.sleep(1)
         conn.close()
@@ -36,7 +36,8 @@ def main():
         print('Waiting for clients...')
         counter = 0
         with open('counter.serialize', 'w') as file:
-            file.write(counter)
+            file.write(str(counter))
+
         while True:
             with open('counter.serialize') as file:
                 counter = int(file.readline())
@@ -47,7 +48,7 @@ def main():
             counter += 1
 
             with open('counter.serialize', 'w') as file:
-                file.write(counter)
+                file.write(str(counter))
             thread.start_new_thread(handle_client, (conn, addr))
         sock.close()
 
