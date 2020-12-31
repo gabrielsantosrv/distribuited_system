@@ -1,3 +1,8 @@
+"""
+Reference: https://towardsdatascience.com/understanding-lamport-timestamps-with-pythons-multiprocessing-library-12a6427881c6
+"""
+
+
 import _thread as thread
 import socket
 import sys
@@ -6,7 +11,7 @@ import time
 from lamport_utils import *
 
 # we use counter as a global variable to share among clients
-global counter
+# global counter
 counter = 0
 
 def handle_client(conn, client_ip):
