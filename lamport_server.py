@@ -1,9 +1,7 @@
-import socket
-import os
 import _thread as thread
-import time
-import json
+import socket
 import sys
+
 from lamport_utils import *
 
 # we use counter as a global variable to share among clients
