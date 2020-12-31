@@ -23,6 +23,7 @@ def handle_client(conn, client_ip):
         conn.close()
 
 def main():
+    global counter
     HOST = '0.0.0.0'  # Standard loopback interface address (localhost)
     PORT = 9000  # Port to listen on (non-privileged ports are > 1023)
 
@@ -35,7 +36,6 @@ def main():
             conn, addr = sock.accept()
             lamport_timestamp = '(LAMPORT_TIMESTAMP={})'.format(counter)
             print('New client {} at {}'.format(addr, lamport_timestamp))
-            global counter
             counter += 1
             thread.start_new_thread(handle_client, (conn, addr))
         sock.close()
