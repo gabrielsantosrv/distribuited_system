@@ -1,6 +1,6 @@
 import sys
 import time
-import urllib
+import urllib.request
 from socket import socket
 
 from lamport_utils import *
