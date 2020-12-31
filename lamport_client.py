@@ -16,7 +16,7 @@ def connect(counter, sock, host, port):
 
 if __name__ == '__main__':
     # Server IP and PORT
-    SERVER_IP = '54.167.150.120'
+    SERVER_IP = '3.83.227.111'
     SERVER_PORT = 9000
     n_events = int(sys.argv[1])
     sleep_time = int(sys.argv[2])
