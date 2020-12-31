@@ -1,6 +1,7 @@
 import _thread as thread
 import socket
 import sys
+import time
 
 from lamport_utils import *
 
@@ -13,11 +14,12 @@ def handle_client(conn, client_ip):
     global counter
     with conn:
         while not stop_loop:
-            counter, stop_loop = receive_message(client_ip, conn, counter)
-            if stop_loop:
+            counter, keep_loop = receive_message(client_ip, conn, counter)
+            if not keep_loop:
                 break
             msg = "[{}], the Server received your message".format(client_ip)
             counter = send_message(client_ip, conn, counter, msg)
+            time.sleep(1)
         conn.close()
 
 def main():
