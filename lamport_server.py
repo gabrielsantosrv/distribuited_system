@@ -45,7 +45,6 @@ def main():
             print('New client {} at {}'.format(addr, lamport_timestamp))
             counter += 1
             thread.start_new_thread(handle_client, (conn, addr))
-        sock.close()
 
 
 if __name__ == '__main__':
