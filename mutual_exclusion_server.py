@@ -24,37 +24,45 @@ def handle_client(sock, client_ip):
                 data = json.loads(data.decode())
                 message = data.get("message")
                 if message == 'permission':
-                    print("Client {} request permission".format(client_ip))
+                    print("Client {} request permission - permission {}".format(client_ip, is_free))
+                
                     data = json.dumps({"message": "permission", "value": is_free})
                     sock.send(data.encode())
                     last_time = time.time()
                     if is_free:
                         is_free = False
-                    check_is_alive(sock)
+                    #check_is_alive(sock, client_ip)
                 else:
                     print("Client {} release resource".format(client_ip))
                     is_free = True
+                check_is_alive(sock, client_ip)
                 time.sleep(1)
             except ValueError:
                 break
 
-def check_is_alive(sock):
+def check_is_alive(sock, client_ip):
     global last_time, is_free
     if last_time > 0:
         diff = time.time() - last_time
         if diff >= 10:  # timeout de 10 segundos
+            print("Checking {} health".format(client_ip))
             data = json.dumps({"message": "running"})
             sock.send(data.encode())
             while True:
                 try:
+
                     data = sock.recv(1024)
                     data = json.loads(data.decode())
                     message = data.get("message")
                     if message == 'running':
                         last_time = time.time()
+                        print("{} is still running".format(client_ip))
+                        break
                 except ValueError:
                     # nó morreu
                     is_free = True
+                    print("{} is dead".format(client_ip))                    
+                    break
 
 def main():
     HOST = '0.0.0.0'  # Standard loopback interface address (localhost)
