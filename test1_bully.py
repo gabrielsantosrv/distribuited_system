@@ -120,7 +120,7 @@ def proxy():
         counter.value += 1
         unique_count = counter.value
 
-    url = 'http://52.86.28.185:%s/response' % port_number
+    url = 'http://127.0.0.1:%s/response' % port_number
     if unique_count == 1:
         data = request.get_json()
         requests.post(url, json=data)
@@ -142,4 +142,4 @@ timer_thread1 = threading.Timer(15, init)
 timer_thread1.start()
 
 if __name__ == '__main__':
-    app.run(host='52.86.28.185', port=port_number)
+    app.run(host='127.0.0.1', port=port_number)

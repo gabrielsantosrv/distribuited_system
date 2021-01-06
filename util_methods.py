@@ -63,14 +63,15 @@ def get_higher_nodes(node_details, node_id):
     higher_node_array = []
     for each in node_details:
         if each['node_id'] > node_id:
-            higher_node_array.append(each['port'])
+            higher_node_array.append((each['port'], each['node_id']))
     return higher_node_array
 
 
 # this method is used to send the higher node id to the proxy
 def election(higher_nodes_array, node_id):
     status_code_array = []
-    for each_port in higher_nodes_array:
+    for each_node in higher_nodes_array:
+        each_port = each_node[0]
         url = 'http://localhost:%s/proxy' % each_port
         data = {
             "node_id": node_id
