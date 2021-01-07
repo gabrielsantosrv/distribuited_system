@@ -39,3 +39,4 @@ INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:27:32] "[37mGET /nodeDetails HTTP/1
 INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:27:32] "[37mPOST /proxy HTTP/1.1[0m" 200 -
 INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:27:32] "[37mPOST /announce HTTP/1.1[0m" 200 -
 INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:27:34] "[37mGET /nodeDetails HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://172.31.58.34:9000/ (Press CTRL+C to quit)
