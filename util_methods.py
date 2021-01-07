@@ -16,14 +16,14 @@ def generate_node_id():
 
 # This method is used to register the service in the service registry
 def register_service(name, port, node_id):
-    url = "http://localhost:8500/v1/agent/service/register"
+    url = "http://172.31.54.227:8500/v1/agent/service/register"
     data = {
         "Name": name,
         "ID": str(node_id),
         "port": port,
         "check": {
             "name": "Check Counter health %s" % port,
-            "tcp": "localhost:%s" % port,
+            "tcp": "172.31.54.227:%s" % port,
             "interval": "10s",
             "timeout": "1s"
         }
@@ -34,7 +34,7 @@ def register_service(name, port, node_id):
 
 def check_health_of_the_service(service):
     print('Checking health of the %s' % service)
-    url = 'http://localhost:8500/v1/agent/health/service/name/%s' % service
+    url = 'http://172.31.54.227:8500/v1/agent/health/service/name/%s' % service
     response = requests.get(url)
     response_content = json.loads(response.text)
     aggregated_state = response_content[0]['AggregatedStatus']
@@ -48,7 +48,7 @@ def check_health_of_the_service(service):
 # get ports of all the registered nodes from the service registry
 def get_ports_of_nodes():
     ports_dict = {}
-    response = requests.get('http://127.0.0.1:8500/v1/agent/services')
+    response = requests.get('http://172.31.54.227:8500/v1/agent/services')
     nodes = json.loads(response.text)
     for each_service in nodes:
         service = nodes[each_service]['Service']
@@ -72,7 +72,7 @@ def election(higher_nodes_array, node_id):
     status_code_array = []
     for each_node in higher_nodes_array:
         each_port = each_node[0]
-        url = 'http://localhost:%s/proxy' % each_port
+        url = 'http://172.31.54.227:%s/proxy' % each_port
         data = {
             "node_id": node_id
         }
@@ -104,7 +104,7 @@ def ready_for_election(ports_of_all_nodes, self_election, self_coordinator):
 def get_details(ports_of_all_nodes):
     node_details = []
     for each_node in ports_of_all_nodes:
-        url = 'http://localhost:%s/nodeDetails' % ports_of_all_nodes[each_node]
+        url = 'http://172.31.54.227:%s/nodeDetails' % ports_of_all_nodes[each_node]
         data = requests.get(url)
         node_details.append(data.json())
     return node_details
@@ -117,6 +117,6 @@ def announce(coordinator):
         'coordinator': coordinator
     }
     for each_node in all_nodes:
-        url = 'http://localhost:%s/announce' % all_nodes[each_node]
+        url = 'http://172.31.54.227:%s/announce' % all_nodes[each_node]
         print(url)
         requests.post(url, json=data)

@@ -50,3 +50,16 @@ INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:27:32] "[37mGET /nodeDetails HTTP/1
 INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:27:32] "[37mPOST /announce HTTP/1.1[0m" 200 -
 INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:27:33] "[37mGET /nodeDetails HTTP/1.1[0m" 200 -
 INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:27:34] "[37mGET /nodeDetails HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [06/Jan/2021 23:58:41] "[37mPOST /announce HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [07/Jan/2021 00:12:33] "[37mPOST /announce HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [07/Jan/2021 00:21:08] "[37mPOST /announce HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [07/Jan/2021 00:22:03] "[37mPOST /announce HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://172.31.54.227:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:172.31.54.227 - - [07/Jan/2021 00:29:55] "[37mPOST /announce HTTP/1.1[0m" 200 -
