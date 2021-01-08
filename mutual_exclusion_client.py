@@ -44,6 +44,7 @@ if __name__ == '__main__':
             if message == 'running':
                 data = json.dumps({"message": "running", "value": True})
                 sock.send(data.encode())
+                value = False
             else:
                 value = data.get("value")
                 print("Permission:", value)
