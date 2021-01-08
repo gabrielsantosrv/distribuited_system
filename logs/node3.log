@@ -1,2 +1,40 @@
 INFO:werkzeug: * Running on http://127.0.0.1:5003/ (Press CTRL+C to quit)
 INFO:werkzeug:127.0.0.1 - - [31/Dec/2020 17:12:36] "[37mPOST /announce HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5003/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 20:51:53] "[37mGET /nodeDetails HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 20:52:03] "[37mGET /nodeDetails HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 20:52:03] "[37mPOST /announce HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 20:52:15] "[37mGET /nodeDetails HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 20:52:15] "[37mGET /nodeDetails HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 20:52:15] "[37mPOST /announce HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5003/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:06:50] "[37mGET /nodeDetails HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:06:51] "[37mGET /nodeDetails HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:06:59] "[37mGET /nodeDetails HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:06:59] "[37mPOST /announce HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:07:01] "[37mGET /nodeDetails HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:07:01] "[37mPOST /response HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:07:01] "[37mPOST /proxy HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:07:01] "[37mGET /nodeDetails HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:07:01] "[37mGET /nodeDetails HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:07:01] "[37mPOST /announce HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5003/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5003/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:25:57] "[37mGET /nodeDetails HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:26:02] "[37mGET /nodeDetails HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:26:02] "[37mPOST /announce HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:26:12] "[37mGET /nodeDetails HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:26:12] "[37mGET /nodeDetails HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:26:12] "[37mGET /nodeDetails HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:26:12] "[37mGET /nodeDetails HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:26:12] "[37mPOST /announce HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5003/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:27:23] "[37mGET /nodeDetails HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:27:24] "[37mGET /nodeDetails HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:27:32] "[37mGET /nodeDetails HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:27:32] "[37mPOST /response HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:27:32] "[37mPOST /proxy HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:27:32] "[37mGET /nodeDetails HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:27:32] "[37mGET /nodeDetails HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:27:32] "[37mPOST /announce HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2021 21:27:33] "[37mGET /nodeDetails HTTP/1.1[0m" 200 -

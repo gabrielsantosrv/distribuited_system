@@ -1,0 +1,1 @@
+{"Token":"","Service":{"ID":"2509150987349","Service":"node1","Tags":null,"Address":"","Meta":null,"Port":9000,"Weights":{"Passing":1,"Warning":1},"EnableTagOverride":false,"Proxy":{"MeshGateway":{},"Expose":{}},"Connect":{},"CreateIndex":0,"ModifyIndex":0},"Source":"remote"}
