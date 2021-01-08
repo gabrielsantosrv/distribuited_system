@@ -3,25 +3,16 @@ References:
     LAMPORT TIMESTAMP: https://towardsdatascience.com/understanding-lamport-timestamps-with-pythons-multiprocessing-library-12a6427881c6
     TCP SOCKET: https://steelkiwi.com/blog/working-tcp-sockets/
 """
+import json
 import sys
 import time
 import urllib.request
 import socket
 
-from lamport_utils import *
-
-
-def connect(counter, sock, host, port):
-    sock.connect((host, port))
-    counter += 1
-    lamport_timestamp = '(LAMPORT_TIMESTAMP={})'.format(counter)
-    print('Connection Request at {}'.format(lamport_timestamp))
-    return counter
-
 
 if __name__ == '__main__':
     # Server IP and PORT
-    SERVER_IP = '54.157.184.75'
+    SERVER_IP = '54.197.80.15'
     SERVER_PORT = 9000
     n_events = int(sys.argv[1])
     sleep_time = int(sys.argv[2])
