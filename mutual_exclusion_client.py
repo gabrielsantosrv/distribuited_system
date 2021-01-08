@@ -21,7 +21,7 @@ def connect(counter, sock, host, port):
 
 if __name__ == '__main__':
     # Server IP and PORT
-    SERVER_IP = '54.197.80.15'
+    SERVER_IP = '54.157.184.75'
     SERVER_PORT = 9000
     n_events = int(sys.argv[1])
     sleep_time = int(sys.argv[2])
@@ -47,9 +47,9 @@ if __name__ == '__main__':
             else:
                 value = data.get("value")
                 print("Permission:", value)
-                time.sleep(sleep_time)
-                if bool(value):
-                    print("Releasing permission...")
 
+            time.sleep(sleep_time)
             data = json.dumps({"message": "release", "value": True})
             sock.send(data.encode())
+            if bool(value):
+                print("Releasing permission...")
