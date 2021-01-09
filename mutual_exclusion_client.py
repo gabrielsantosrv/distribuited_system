@@ -11,11 +11,12 @@ import socket
 
 
 if __name__ == '__main__':
-    # Server IP and PORT
-    SERVER_IP = '54.197.80.15'
-    SERVER_PORT = 9000
     n_events = int(sys.argv[1])
     sleep_time = int(sys.argv[2])
+
+    # Server IP and PORT
+    SERVER_IP = str(sys.argv[3])
+    SERVER_PORT = 9000
 
     counter = 0
     external_ip = urllib.request.urlopen('https://ident.me').read().decode('utf8')
